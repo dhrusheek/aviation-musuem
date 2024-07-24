@@ -39,6 +39,28 @@ function goPrev(){
 
 }
 
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if(window.scrollY>100 ){
+        header.classList.add('scrolled');
+    }
+    else{
+        header.classList.remove('scrolled');
+
+    }
+});
+
+document.addEventListener('scroll', () => {
+    const h2 = document.querySelector('h2');
+    if(window.scrollY>1000 ){
+        h2.classList.add('scrolled');
+    }
+    else{
+        h2.classList.remove('scrolled');
+
+    }
+});
+
 
 
 
