@@ -51,8 +51,8 @@ document.addEventListener('scroll', () => {
 });
 
 document.addEventListener('scroll', () => {
-    const h2 = document.querySelector('h2');
-    if(window.scrollY>1000 ){
+    const h2 = document.querySelector('.asiafirst');
+    if(window.scrollY>100 ){
         h2.classList.add('scrolled');
     }
     else{
