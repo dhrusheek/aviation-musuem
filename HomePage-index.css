@@ -1,25 +1,27 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-image: url(museum_cropped.jpg);
+    background-attachment: fixed;
+
 }
 
 * {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     box-sizing: border-box;
-    
 }
 
 #Header {
+    width: 100%;
     display: grid;
     text-align: center;
     height: 12%;
     color: aliceblue;
     background-color: black;
-    border: 10px solid black;
-    box-shadow: 200vh solid white;
+
 }
+
 #Header::after {
     content: "";
     position: relative;
@@ -27,28 +29,73 @@ body, html {
     left: 0px;
     right: 0px;
     height: 2px;
-    background-color: #ffffff;}
+    background-color: #ffffff;
+}
 
 #NavBar-container {
-    height: 45px;
-    background-color:rgb(0, 0, 0);
-    box-shadow: 200px black;
+
+padding: 0;
+margin: 0;
 }
 
-#NavBar {
-    padding-top: 12px;
+.headcon{
+    background-color: black;
+}
+
+header {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    justify-content: space-around;
+    max-height: 3%;
     display: flex;
+    position: sticky;
+    width: 100%;
     align-items: center;
+    background-color: rgb(0, 0, 0);
+    
+
     justify-content: space-evenly;
     color: antiquewhite;
+    text-overflow: hidden;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s ease-in-out;
+    
 }
 
-#NavBar a {
+header a {
     text-decoration: none;
-    color: antiquewhite;
+    margin-right: 5rem;
+    color: rgb(255, 255, 255);
 }
+header nav{
+    display: flex  ;
+}
+
+header.scrolled{
+    padding-top: 20px;
+        height: 5%;
+        padding-bottom:20px ;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    top: 0;
+}
+
+header.scrolled a{
+    color: black;
+}
+
 
 #ticket {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-inline-size: 80%;
     color: black;
     border-radius: 50px;
     border: 2px solid greenyellow;
@@ -56,6 +103,7 @@ body, html {
 }
 
 #ticket a {
+    margin-right: 1rem;
     color: black;
 }
 
@@ -66,6 +114,8 @@ body, html {
 }
 
 .imageWithText {
+    
+
     margin: 0;
     padding: 0;
     height: 300px;
@@ -77,37 +127,57 @@ body, html {
     margin: 0;
     height: 300px;
     padding: 0;
-    position: relative;
-    text-overflow: clip;
+    
+
+}
+.container{
+    text-overflow: hidden;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .asiafirst {
+
+    margin-top: 14rem;
+    
+    background-color: #ffffff00;
+
+    
     position: absolute;
-    margin: 0;
-    top: 0;
-    padding-top: 60px;
+    
+    top: 2rem;
     padding-left: 30px;
     color: antiquewhite;
     padding-left: 50px;
-    text-overflow: clip;
-    overflow: hidden;
+
+}
+
+#h2.scrolled{
+    color: rgb(0, 0, 0);
+    padding-top: 50rem;
 }
 
 .asiafirst h2 {
+    
+
+   
     font-weight: bold;
-    font-size: 50px;
+    font-size: calc(3vw + 3vh);
     padding-left: 50px;
     margin: 0;
-    overflow: hidden;
+
 }
 
 .asiafirst p {
+    position: relative;
+
+ 
     padding-left: 50px;
     font-style: italic;
-    font-size: 20px;
+    font-size: calc(1vw + 1vh);
     margin: 0;
-    overflow: hidden;
+
 }
 
 .temp {
@@ -116,13 +186,15 @@ body, html {
 }
 
 #rightButton {
+    border-radius: 50%;
     position: absolute;
     margin: 0;
-    top: 45%;
+    top: 30%;
     padding-left: 8px;
 }
 
 #rightButton button {
+    border-radius: 50%;
     text-decoration: none;
     background-color: rgb(184, 184, 184);
     border: none;
@@ -130,13 +202,15 @@ body, html {
 }
 
 #leftButton {
+    border-radius: 50%;
     position: absolute;
     padding-left: 96.2%;
     margin: 0;
-    top: 45%;
+    top: 30%;
 }
 
 #leftButton button {
+    border-radius: 50%;
     text-decoration: none;
     background-color: rgb(184, 184, 184);
     border: none;
@@ -146,50 +220,37 @@ body, html {
 #blackandwhite {
     height: 10rem;
     width: 100%;
-    
     display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-    
 }
 
 #black {
-   
     height: 15%;
-
-
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: rgb(0, 0, 0);
-
     width: 25%;
-    
     color: aliceblue;
-    
 }
-
-
 
 #black h1 {
     font-size: 2rem;
-  
     color: bisque;
     overflow: hidden;
 }
 
-#black img{
-   height: 100px;
-   width: 75%;
-   overflow: hidden;
-  
+#black img {
+    height: 100px;
+    width: 75%;
+    overflow: hidden;
     object-fit: cover;
 }
+
 #white {
-    
-    
     block-size: 190px;
     margin: 0;
     padding: 0;
@@ -203,12 +264,10 @@ body, html {
     color: bisque;
 }
 
-#grey{
+#grey {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
     block-size: 190px;
     margin: 0;
     padding: 0;
@@ -218,15 +277,16 @@ body, html {
     color: rgb(0, 0, 0);
 }
 
-#grey h1{
+#grey h1 {
     color: rgb(255, 239, 63);
 }
 
-#grey p{
+#grey p {
     margin: 0px;
     padding: 0px;
 }
-#white2{
+
+#white2 {
     background-color: rgb(203, 203, 203);
     block-size: 190px;
     margin: 0;
@@ -236,30 +296,28 @@ body, html {
     overflow: hidden;
 }
 
-#mainatc{
+#mainatc {
     text-align: center;
 }
-#mainatc h1{
+
+#mainatc h1 {
     color: rgb(0, 0, 0);
 }
 
-#cardscroll::-webkit-scrollbar{
+#cardscroll::-webkit-scrollbar {
     height: 0;
 }
 
-#cardscroll{
-    
+#cardscroll {
     padding: 0 20px;
     width: 100%;
     display: flex;
     scroll-behavior: smooth;
     padding-bottom: 5%;
-
-   
     overflow-x: auto;
 }
 
-#cards{
+#cards {
     width: 350px;
     height: 350px;
     border-radius: 30px;
@@ -267,61 +325,138 @@ body, html {
     border: 4px solid rgb(0, 0, 0);
     align-content: center;
     text-align: center;
-    margin-right:40px ;
+    margin-right: 40px;
     text-wrap: pretty;
-    
-
 }
-.productimg{
+
+.productimg {
     overflow-wrap: normal;
     overflow: hidden;
     overflow-y: hidden;
     padding-top: 10px;
 }
 
-.productimg img{
+.productimg img {
     border-radius: 15px;
     overflow: hidden;
     min-block-size: 200px;
     min-inline-size: 200px;
-
     max-block-size: 250px;
     max-inline-size: 250px;
     object-fit: cover;
     align-content: center;
 }
 
-#cards p{
+#cards p {
     padding-left: 5px;
-    padding-right:5px ;
+    padding-right: 5px;
 }
-#cards h3{
-    background-color:  rgb(255, 255, 255);
+
+#cards h3 {
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
-    
 }
 
-#footer{
+#footer {
     background-color: rgb(0, 0, 0);
-    padding: 20px ;
-    
+    padding: 20px;
+    padding-bottom: 20rem;
 }
 
-#footercontent h1{
+#footercontent h1 {
     margin: 0;
     padding: 0;
     color: #ffffff;
 }
 
-#footercontent h3{
+#footercontent h3 {
     margin: 0;
     padding: 0;
     color: blanchedalmond;
     float: right;
     padding-right: 10%;
-
 }
-#footercontent p{
+
+#footercontent p {
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    #Header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #heading {
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding-top: 20px;
+        height: 5%;
+        padding-bottom:20px ;
+    }
+
+    header a {
+        font-size: calc(0.9vw + 0.9vh);
+        padding: 5px 0;
+    }
+
+    .imageWithText {
+        height: auto;
+    }
+
+    .asiafirst {
+        padding: 10px;
+        padding-top: 20rem;
+    }
+
+    .asiafirst h2 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .asiafirst p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    #blackandwhite {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #black, #white, #grey, #white2 {
+        
+        width: 25%;
+        padding: 10px;
+    }
+
+    #black h1, #white h1, #grey h1, #white2 h1 {
+        font-size: 1.2rem;
+    }
+
+    #black p, #white p, #grey p, #white2 p {
+        font-size: 0.9rem;
+    }
+
+    #cardscroll {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    #cards {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #footercontent h1 {
+        font-size: 1rem;
+    }
+
+    #footercontent h3 {
+        font-size: 0.8rem;
+    }
 }
 
