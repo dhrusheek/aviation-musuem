@@ -44,18 +44,21 @@ margin: 0;
 
 header {
     padding-top: 0.7rem;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 0.7rem;
 
-    justify-content: space-around;
+    
     max-height: 3%;
     display: flex;
+    justify-content: center;
     position: sticky;
     width: 100%;
     align-items: center;
     background-color: rgb(0, 0, 0);
     
 
-    justify-content: space-evenly;
+    
     color: antiquewhite;
     text-overflow: hidden;
     overflow: hidden;
@@ -76,12 +79,13 @@ header nav{
 
 header.scrolled{
     padding-top: 20px;
-        height: 5%;
+        height: 8%;
         padding-bottom:20px ;
     background-color: #ffffff;
     color: black;
     position: fixed;
     top: 0;
+    overflow-wrap: normal;
 }
 
 header.scrolled a{
@@ -103,7 +107,7 @@ header.scrolled a{
 }
 
 #ticket a {
-    margin-right: 1rem;
+    margin: 0;
     color: black;
 }
 
@@ -342,11 +346,9 @@ header.scrolled a{
 }
 
 .productimg:hover{
-    overflow: hidden;
 }
 .productimg img {
     border-radius: 15px;
-    overflow: hidden;
     min-block-size: 200px;
     min-inline-size: 200px;
     max-block-size: 250px;
@@ -359,19 +361,22 @@ header.scrolled a{
 
 .productimg:hover{
     transition: 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
     transform: scale(1.1);
     border-radius: 0%;
     object-fit: cover;
     width: 300px;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
 }
 
-productimg img:hover {
+#productimg img:hover {
+    display: flex;
+    justify-content: center;
+        align-items: center;
     border-radius: 0px;
     object-fit: cover;
-    overflow: hidden;
+   
 
     transition: 0.5s ease-in-out;
     
@@ -429,8 +434,15 @@ productimg img:hover {
     }
 
     header a {
-        font-size: calc(0.6vw + 0.7vh);
-        padding: 5px 0;
+        
+        font-size: calc(1vw + 1vh);
+        
+    }
+
+    header.scrolled{
+        padding-top:10px;
+        padding: 20px;
+        padding-bottom:5px ;
     }
 
     .imageWithText {
@@ -488,6 +500,7 @@ productimg img:hover {
     }
 
     #blackandwhite {
+        
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -500,21 +513,38 @@ productimg img:hover {
     }
 
     #black h1, #white h1, #grey h1, #white2 h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     #black p, #white p, #grey p, #white2 p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #cardscroll {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         padding: 10px 0;
     }
 
+
     #cards {
+        justify-content: center;
+        align-items: center;
         width: 100%;
         margin: 10px 0;
+    }
+
+    .productimg:hover{
+        transition: 0.5s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.1);
+        padding-left: 12%;
+        border-radius: 0%;
+        object-fit: cover;
+        width: 300px;
+    
     }
 
     #footercontent h1 {
