@@ -1,145 +1,562 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Home-Naval Aviation Museum</title>
-    <link rel="shortcut icon" type="x-icon" href="navyLogo.png">
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(museum_cropped.jpg);
+    background-attachment: fixed;
+
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+#Header {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    height: 12%;
+    color: aliceblue;
+    background-color: black;
+
+}
+
+#Header::after {
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+#NavBar-container {
+
+padding: 0;
+margin: 0;
+}
+
+.headcon{
+    background-color: black;
+}
+
+header {
+    padding-top: 0.7rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0.7rem;
+
+    justify-content: space-evenly;
+    max-height: 5%;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
 
     
-    <script src="Homepage-index.js"></script>
+    color: antiquewhite;
+    text-overflow: hidden;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s ease-in-out;
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="HomePage-index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-<body>
-    <div id="Header">
-        <h1 id="heading">Naval Aviation Museum, Vasco Da Gama</h1>
-    </div>
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 0rem;
+    color: rgb(255, 255, 255);
+}
+header nav{
     
-        <header>
-            
-            
-            <a href="index.html">Home</a>
-            <a href="aboutUs.html">About us</a>
-            <a href="contactUs.html">Contact us</a>
-            <div id="ticket">
-                <a href="Booktickets.html">
-                    <i class="fa-solid fa-ticket"></i>Book Tickets 
-                </a>
-            
-            
-        </header>
+}
+
+header.scrolled{
+    padding-top: 20px;
+        height: 8%;
+        padding-bottom:20px ;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    top: 0;
+    overflow-wrap: normal;
+}
+
+header.scrolled a{
+    color: black;
+}
+
+
+#ticket {
     
-        
-        
-    </div>
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-inline-size: 80%;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+}
+
+#ticket a {
+    margin: 0;
+    color: black;
+}
+
+#heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imageWithText {
     
-    <div id="imageWithText" onmouseover="foreverGoNext()">
+
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#imageWithText {
+
+    margin: 0;
+    height: 300px;
+    padding: 0;
+    object-fit: cover;
 
     
-        
-        <img class="imageWithText" name="slide" alt="" src="engine.jpg" >
-        
 
-    <div id="buttons">
-        <button onclick="goPrev()" id="rightD" class="sheek"><i class="fa-solid fa-arrow-left"></i></button>
-        <button onclick="goNext()" id="leftH" class="Dhru"><i class="fa-solid fa-arrow-right"></i></button>
-        
-        
-            
-        
-    </div>
+}
+.container{
+    text-overflow: hidden;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.asiafirst {
+    
+    
+    margin-top: 14rem;
+    
+    background-color: #ffffff00;
+
+    
+    position: absolute;
+    
+    top: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: antiquewhite;
+    text-shadow: 2px 0px 12px black;
+
+}
+
+
+
+.asiafirst h2 {
+    
+
+   
+    font-weight: bold;
+    font-size: calc(2vw + 2vh);
+    padding-left: 50px;
+    margin: 0;
+
+}
+
+.asiafirst p {
+    position: relative;
+
  
+    padding-left: 50px;
+    font-style: italic;
+    font-size: calc(0.9vw + 0.9vh);
+    margin: 0;
 
+}
+
+.temp {
+    height: 10000px;
+    width: 100%;
+}
+
+
+#buttons{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ top: -12rem;
+}
+
+#buttons button{
+    text-shadow: 2px 0px 12px rgb(255, 255, 255);
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+
+
+#blackandwhite {
+    
+    margin: 0;
+    padding: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+#black {
+    height: 15%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 25%;
+    color: aliceblue;
+}
+
+#black h1 {
+    font-size: 2rem;
+    color: bisque;
+    overflow: hidden;
+}
+
+#black img {
+    height: 100px;
+    width: 75%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#white {
+    block-size: 190px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(101, 101, 101);
+    width: 25%;
+    color: aliceblue;
+}
+
+#white h1 {
+    color: bisque;
+}
+
+#grey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    block-size: 190px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(157, 157, 157);
+    width: 25%;
+    color: rgb(0, 0, 0);
+}
+
+#grey h1 {
+    color: rgb(255, 239, 63);
+}
+
+#grey p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#white2 {
+    background-color: rgb(203, 203, 203);
+    block-size: 190px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+}
+
+#mainatc {
+    text-shadow: 2px 0px 12px rgb(255, 255, 255);;
+    text-align: center;
+}
+
+#mainatc h1 {
+    color: rgb(0, 0, 0);
+}
+
+#cardscroll::-webkit-scrollbar {
+    height: 0;
+}
+
+#cardscroll {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    scroll-behavior: smooth;
+    padding-bottom: 5%;
+    overflow-x: auto;
+}
+
+#cards {
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: rgb(211, 224, 255);
+    border: 4px solid rgb(0, 0, 0);
+    align-content: center;
+    text-align: center;
+    margin-right: 40px;
+    text-wrap: pretty;
+    
+
+
+}
+
+#cars:hover{
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.productimg {
+    overflow-wrap: normal;
+    overflow: hidden;
+    overflow-y: hidden;
+    padding-top: 10px;
+}
+
+.productimg:hover{
+}
+.productimg img {
+    border-radius: 15px;
+    min-block-size: 200px;
+    min-inline-size: 200px;
+    max-block-size: 250px;
+    max-inline-size: 250px;
+    object-fit: cover;
+    align-content: center;
+    transition: 1s ease-in-out;
+    
+}
+
+.productimg:hover{
+    transition: 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    border-radius: 0%;
+    object-fit: cover;
+    width: 300px;
+
+}
+
+#productimg img:hover {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    border-radius: 0px;
+    object-fit: cover;
+   
+
+    transition: 0.5s ease-in-out;
+    
+}
+#cards p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#cards h3 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-bottom: 5rem;
+}
+
+#footercontent h1 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#footercontent h3 {
+    margin: 0;
+    padding: 0;
+    color: blanchedalmond;
+    float: right;
+    padding-right: 10%;
+}
+
+#footercontent p {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    #Header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #heading {
+        font-size: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        
+        height: 5%;
+        text-wrap: balance;
+    }
+
+    header a {
+        
+        font-size: calc(1vw + 1vh);
+        
+    }
+
+    header.scrolled{
+        padding-top:10px;
+        padding: 20px;
+        padding-bottom:5px ;
+    }
+
+    .imageWithText {
+        margin: 0;
+        height: 300px;
+        padding: 0;
+        object-fit: cover;
+
+        
+    }
+
+    #ticket{
+        font-size: calc(0.5vw + 0.5vh);
+
+    }
+    #imageWithText{
+
+        object-fit: cover;
+
+    }
+
+    .asiafirst {
+        padding: 10px;
+        padding-top: 5rem;
+        position: absolute;
+    
+        top: 2rem;
+        padding-left: 30px;
+        color: antiquewhite;
+        padding-left: 50px;
+    }
+
+    .asiafirst.scrolled{
+        margin-top: 8rem;
+    
+    background-color: #ffffff00;
 
     
-    <div class="asiafirst">
-        <h2>Asia's First Naval Aviation Museum</h2>
-        <p>Get ready to witness the Indian Navy's aviation marvels!</p>
-    </div>
-    <div id="blackandwhite">
-        <div id="black">
-            <h1>Locate Us</h1>
-            <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqBwgCEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIKCAMQABixAxiABDIKCAQQABixAxiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDI1MjlqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KaFu19X-x787MbG5pf8KY6RO&daddr=Bogmalo+Road,+Vasco+Da+Gama,+Bagmalo,+Goa+403806"><img src="map.png" alt=""></a>
-        </div>
-        <div id="white">
-            <h1>Opening Hours</h1>
-            <p>Monday to Sunday: 10:00 AM to 5:00 PM</p>
-        </div>
-        <div id="grey">
-            <h1>CAFE!</h1>
-            <p>Enjoy a cup of coffee while you explore the museum!</p>
-        </div>
-        <div id="white2">
-            <h1>Field Trip?</h1>
-            <p>Here at the Museum we encourage Academic visits!</p>
-        </div>
-    </div>
-    <div id="mainatc">
-        <h1>Special Attractions</h1>
-    </div>
-    <div id="cardscroll">
-        <div id="cards">
-            <div class="productimg">
-                <img src="engine.jpg" alt="">
-            </div>
-            <h3>The Engine Bay</h3>
-            <p>Get a close look at the engine bay of the aircrafts!</p>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="harr.JPG" alt="">
-            </div>
-            <h3>The Sea Harrier</h3>
-            <p>Get a close look at the Sea harrier</p>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="vr.jpg" alt="">
-            </div>
-            <h3>Virtual Reality Corner</h3>
-            <p>A next generation experience</p>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="flynox.jpg" alt="">
-            </div>
-            <h3>The "Flynox"</h3>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="ships.JPG" alt="">
-            </div>
-            <h3>Minature Ship Models</h3>
-            <p>Get a close look at the engine bay of the aircrafts!</p>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="cafeout.jpg" alt="">
-            </div>
-            <h3>The Cafe</h3>
-            <p>Grab a bite at the museum!</p>
-        </div>
-        <div id="cards">
-            <div class="productimg">
-                <img src="view.jpg" alt="">
-            </div>
-            <h3>The Sea View</h3>
-            <p>Get a stunning view of the ocean!</p>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="footercontent">
-            <h1>“The best introduction to art is to stroll through a museum. The more art you see, the more you’ll learn to define your own taste.”</h1>
-            <h3>– Jeanne Frank</h3>
-            <p>Copyright &copy; 2024 @DTS CORP</p>
-        </div>
-    </div>
-</body>
-</html>
+    position: absolute;
+    
+    top: 2rem;
+    padding-left: 30px;
+    color: antiquewhite;
+    padding-left: 50px;
+    }
+
+    .asiafirst h2 {
+        font-size: calc(2vw + 2vh) ;      
+        padding: 0;
+    }
+
+    .asiafirst p {
+        font-size: calc(1vw + 1vh) ; 
+        padding: 0;
+    }
+
+    #blackandwhite {
+        
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #black, #white, #grey, #white2 {
+        
+        width: 25%;
+        padding: 10px;
+    }
+
+    #black h1, #white h1, #grey h1, #white2 h1 {
+        font-size: 1.1rem;
+    }
+
+    #black p, #white p, #grey p, #white2 p {
+        font-size: 0.8rem;
+    }
+
+    #cardscroll {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+
+    #cards {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .productimg:hover{
+        transition: 0.5s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.1);
+        padding-left: 12%;
+        border-radius: 0%;
+        object-fit: cover;
+        width: 300px;
+    
+    }
+
+    #footercontent h1 {
+        font-size: 1rem;
+    }
+
+    #footercontent h3 {
+        font-size: 0.8rem;
+    }
+}
+
