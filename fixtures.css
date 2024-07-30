@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(museum_cropped.jpg);
+    background-attachment: fixed;
+
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+#Header {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    height: 12%;
+    color: aliceblue;
+    background-color: black;
+
+}
+
+#Header::after {
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+#NavBar-container {
+
+padding: 0;
+margin: 0;
+}
+
+.headcon{
+    background-color: black;
+}
+
+header {
+    padding-top: 0.7rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0.7rem;
+
+    justify-content: space-evenly;
+    max-height: 5%;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
+
+    
+    color: antiquewhite;
+    text-overflow: hidden;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s ease-in-out;
+    
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 0rem;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover {
+color: greenyellow;
+text-shadow: 0px 0px 3px white ;
+    
+}
+
+header.scrolled{
+    padding-top: 20px;
+        height: 8%;
+        padding-bottom:20px ;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    top: 0;
+    overflow-wrap: normal;
+}
+
+header.scrolled a{
+    color: black;
+}
+
+
+#ticket {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-inline-size: 80%;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+}
+
+#ticket a {
+    margin: 0;
+    color: black;
+}
+
+#heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cardcont{
+height: 75%;
+background-color: #ffffff;
+
+}
+
+#item1{
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: 5rem;
+}
+
+
+#i1cardimg img{
+    background-color: #ffffff;
+
+    padding: 0;
+    margin: 0;
+    width: 60rem;
+    height: 20rem;
+    object-fit: cover;
+}
+#i1cardimg{
+    background-color: #ffffff;
+
+    padding: 0;
+    margin: 0;
+}
+
+#cardinfo{
+    background-color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+}

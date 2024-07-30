@@ -72,6 +72,7 @@ header a {
     margin-right: 0rem;
     color: rgb(255, 255, 255);
 }
+
 header a:hover {
 color: greenyellow;
 text-shadow: 0px 0px 3px white ;
@@ -317,76 +318,90 @@ header.scrolled a{
     padding: 0 20px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     scroll-behavior: smooth;
     padding-bottom: 5%;
     overflow-x: auto;
+    overflow-y: auto;
 }
 
 #cards {
-    width: 350px;
-    height: 350px;
+    min-width: 350px;
+    min-height: 350px;
     border-radius: 30px;
     background-color: rgb(211, 224, 255);
     border: 4px solid rgb(0, 0, 0);
     align-content: center;
     text-align: center;
     margin-right: 40px;
-    text-wrap: pretty;
+    box-shadow: 0px 4px 6px -1px rgb(0, 0, 0);
+    
+
     
 
 
 }
 
-#cars:hover{
+
+
+.productimg{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
     overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.5);
+    
 
 }
 
-.productimg {
-    overflow-wrap: normal;
-    overflow: hidden;
-    overflow-y: hidden;
-    padding-top: 10px;
-}
-
-.productimg:hover{
-}
-.productimg img {
-    border-radius: 15px;
-    min-block-size: 200px;
-    min-inline-size: 200px;
-    max-block-size: 250px;
-    max-inline-size: 250px;
-    object-fit: cover;
-    align-content: center;
-    transition: 1s ease-in-out;
+.imagi{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 1.1s;
     
 }
 
-.productimg:hover{
-    transition: 0.5s ease-in-out;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.1);
-    border-radius: 0%;
-    object-fit: cover;
-    width: 300px;
+.one{
+    background-image: url(engine.jpg);
+}
+.two{
+    background-image: url(harr.JPG);
+}
+
+.three{
+    background-image: url(vr.jpg);
+}
+
+.four{
+    background-image: url(flynox_crop.jpg);
+}
+
+.five{
+    background-image: url(ships.JPG);
 
 }
 
-#productimg img:hover {
-    display: flex;
-    justify-content: center;
-        align-items: center;
-    border-radius: 0px;
-    object-fit: cover;
+.six{
+    background-image: url(cafe.jpg);
+
+}
+
+.seven{
+    background-image: url(view.jpg);
+
+}
+
+.productimg:hover .imagi{
+    transform: scale(1.2);
+
+}
+
+
    
 
-    transition: 0.5s ease-in-out;
-    
-}
+
 #cards p {
     padding-left: 5px;
     padding-right: 5px;
@@ -541,15 +556,7 @@ header.scrolled a{
         margin: 10px 0;
     }
 
-    .productimg:hover{
-        transition: 0.5s ease-in-out;
-        justify-content: center;
-        align-items: center;
-        transform: scale(1.1);
-        padding-left: 12%;
-        border-radius: 0%;
-        object-fit: cover;
-        width: 300px;
+  
     
     }
 
@@ -560,5 +567,5 @@ header.scrolled a{
     #footercontent h3 {
         font-size: 0.8rem;
     }
-}
+
 

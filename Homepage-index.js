@@ -50,6 +50,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
 document.addEventListener('scroll', () => {
     const h2 = document.querySelector('.asiafirst');
     if(window.scrollY>100 ){
